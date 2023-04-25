@@ -1,0 +1,44 @@
+<div id="chart">
+  <apx-chart
+    [series]= "[70, 30, 20]"
+    [chart]="{
+        height: 240,
+        type: 'radialBar'
+      }"
+    [plotOptions]="{radialBar: {
+          offsetY: 0,
+          startAngle: 0,
+          endAngle: 270,
+          hollow: {
+            margin: 5,
+            size: '30%',
+            background: 'transparent',
+            image: undefined
+          },
+          dataLabels: {
+            name: {
+              show: true
+            },
+            value: {
+              show: true
+            }
+          }
+        }}"
+    [labels]="['Municipal Waste', 'Metal Waste', 'Hazardous']"
+    [legend]="{
+        show: true,
+        floating: true,
+        fontSize: '16px',
+        position: 'left',
+        offsetX: -30,
+        offsetY: 20,
+        labels: {
+          useSeriesColors: true
+        },
+        itemMargin: {
+          horizontal: 3
+        }
+      }"
+    [colors]="['#27B3AA', '#94DCBC', '#aff0ec']"
+  ></apx-chart>
+</div>

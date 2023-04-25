@@ -1,0 +1,20 @@
+.head {
+  height: 50px;
+  position: relative;
+  width: 40%;
+  border: 1px solid gray;
+  background: linear-gradient(to right, #009A74 5%, transparent 5%);
+  
+  color:#666666;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text1{
+
+position: absolute;
+left: 10%;
+top:10px;
+font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+ 
+}

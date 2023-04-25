@@ -1,0 +1,27 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.card{
+
+	
+	width:230px;
+	
+	
+
+}
+
+/* Styles for the title */
+mat-card-title {
+  color: #9FA2B4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Styles for the content */
+mat-card-content {
+  color: green;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
