@@ -1,0 +1,3 @@
+[style.background]="'linear-gradient(to right, #f2f5fa 5%, lightgreen)'"
+
+style="background: linear-gradient(to right, #f2f5fa, lightgreen 90%);
