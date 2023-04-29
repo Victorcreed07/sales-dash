@@ -1,4 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+@import '@angular/material/theming';
+
+/*@include mat-core();*/
+@include mat.core();
+
+$f-brand: (
+  50 : #009A74,
+  100 : #b3e0db,
+  200 : #80cbc4,
+  300 : #4db6ac,
+  400 : #26a69a,
+  500 : #009688,
+  600 : #008e80,
+  700 : #008375,
+  800 : #00796b,
+  900 : #006858,
+  A100 : #97ffec,
+  A200 : #64ffe3,
+  A400 : #31ffda,
+  A700 : #18ffd5,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+
+$primary: mat.define-palette($f-brand);
+
+$theme: mat.define-light-theme($primary, $primary);
+
+
+@include mat.all-component-themes($theme);
+
+/*$mat-green: (500: #8BC34A);
+
+
+
+$my-green-theme: mat-light-theme($mat-green,$mat-green);
+
+@include angular-material-theme($my-green-theme);*/
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*.mat-tab-header .mat-ink-bar {
+  background-color: #009A74;
+}*/

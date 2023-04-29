@@ -1,0 +1,81 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../../styles.scss';
+.content3 {
+	margin-top: 20px;
+	width: 100%;
+
+}
+.both{
+	display:flex;
+	height: 100vh;
+	width: 100%;
+	justify-content: space-between;
+}
+.first {
+  flex-basis: 60%;
+  
+}
+
+.second {
+  flex-basis: 40%;
+  height: 100%;
+  margin-left: 10%;
+
+  
+}
+
+::ng-deep .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs > .mat-mdc-tab-header .mat-mdc-tab {
+  flex-grow: 0;
+}
+
+::ng-deep .mat-tab-labels {
+  width: fit-content;
+}
+
+::ng-deep .mat-tab-label {
+  width: 20px; /* Change this value to adjust the width of the tab */
+  max-width: 100%; /* Ensure the tab does not overflow its container */
+}
+
+::ng-deep .mdc-tab {
+  min-width: unset;
+  max-width: 200px;
+}
+::ng-deep .mat-tab-header .mat-ink-bar {
+  background-color: #009A74;
+}
+.card1{
+	margin-top: 20px;
+}
+
+.card43{
+
+	height: 90%;
+	border-radius: 15px;
+	background-color: #EBF8F5;
+	width: 78%;
+
+
+}
+
+mat-progress-bar {
+ 
+  width: 180px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.graph23 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph{
+
+	margin-top: 20px;
+	width: 100%;
+	height: 250px;
+
+}
